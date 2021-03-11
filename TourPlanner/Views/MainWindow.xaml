@@ -65,6 +65,18 @@
         <Button Content="-" Grid.Row="4" Grid.Column="6" Margin="2,2,2,2"/>
         <Button Content="[]" Grid.Row="4" Grid.Column="7" Margin="2,2,2,2"/>
 
+        <Label Content="Title:" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="4"></Label>
+        <TabControl Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="4">
+            <TabItem Header="Route">
+                <Label Content="Content goes here..." />
+            </TabItem>
+
+            <TabItem Header="Description">
+                <Label Content="Content goes here..." />
+            </TabItem>
+
+        </TabControl>
+
 
     </Grid>
 </Window>
