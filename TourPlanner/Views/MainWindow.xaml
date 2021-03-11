@@ -8,17 +8,21 @@
         Title="TourPlanner" Height="450" Width="800">
     <Grid ShowGridLines="True">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
             <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="40*"/>
             <ColumnDefinition Width="12*"/>
-            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
-            <RowDefinition Height="1*" MinHeight="30" MaxHeight="40"/>
-            <RowDefinition Height="10*"/>
+            <RowDefinition Height="37*" MinHeight="30" MaxHeight="40"/>
+            <RowDefinition Height="30*" MinHeight="25" MaxHeight="35"/>
+            <RowDefinition Height="337*"/>
         </Grid.RowDefinitions>
 
-        <Menu VerticalAlignment="Center" Height="30" Grid.ColumnSpan="3">
+        <Menu VerticalAlignment="Center" Height="30" Grid.ColumnSpan="6">
             <MenuItem Header="File" Height="29">
                 <MenuItem Header="New"></MenuItem>
                 <MenuItem Header="Open"></MenuItem>
@@ -37,8 +41,20 @@
             </MenuItem>
         </Menu>
 
-        <TextBox Grid.Row="1" Margin="5,5,5,5" Grid.Column="0" Grid.ColumnSpan="2"></TextBox>
-        <Button Grid.Row="1" Content="Search" Grid.Column="2" Margin="5,5,5,5"></Button>
+        <TextBox Grid.Row="1" Margin="5,5,5,5" Grid.Column="0" Grid.ColumnSpan="5"></TextBox>
+        <Button Grid.Row="1" Content="Search" Grid.Column="5" Margin="5,5,5,5"></Button>
+
+        <Label Content="Tours" Grid.Row="2" Grid.Column="0"></Label>
+        <Button Content="+" Grid.Row="2" Grid.Column="1" Margin="2"/>
+        <Button Content="-" Grid.Row="2" Grid.Column="2" Margin="2"/>
+        <Button Content="[]" Grid.Row="2" Grid.Column="3" Margin="2"/>
+
+        <ListBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4">
+            <ListBoxItem>ListBox Item #1</ListBoxItem>
+            <ListBoxItem>ListBox Item #2</ListBoxItem>
+            <ListBoxItem>ListBox Item #3</ListBoxItem>
+        </ListBox>
+
 
     </Grid>
 </Window>
