@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TourPlanner"
         mc:Ignorable="d"
-        Title="TourPlanner" Height="450" Width="800">
+        Title="TourPlanner" Height="450" Width="800" MinWidth="500" MinHeight="300">
     <Grid ShowGridLines="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10*"/>
@@ -23,7 +23,7 @@
             <RowDefinition Height="35*" MinHeight="25" MaxHeight="35"/>
             <RowDefinition Height="100*"/>
             <RowDefinition Height="35*" MinHeight="25" MaxHeight="35"/>
-            <RowDefinition Height="140*"/>
+            <RowDefinition Height="110*"/>
         </Grid.RowDefinitions>
 
         <Menu VerticalAlignment="Center" Height="30" Grid.ColumnSpan="8">
