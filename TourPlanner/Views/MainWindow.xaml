@@ -49,7 +49,7 @@
         <Button Grid.Row="1" Content="Search" Grid.Column="5" Margin="5,5,5,5" Grid.ColumnSpan="3"/>
 
         <Label Content="Tours" Grid.Row="2" Grid.Column="0"/>
-        <Button Content="+" Grid.Row="2" Grid.Column="1" Margin="2,2,2,2" Command="{Binding ExecuteCommand}"/>
+        <Button Content="+" Grid.Row="2" Grid.Column="1" Margin="2,2,2,2" Command="{Binding OpenAddTourView}"/>
         <Button Content="-" Grid.Row="2" Grid.Column="2" Margin="2,2,2,2"/>
         <Button Content="[]" Grid.Row="2" Grid.Column="3" Margin="2,2,2,2"/>
 

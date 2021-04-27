@@ -10,15 +10,19 @@ namespace TourPlanner.ViewModels
 {
     class MainViewModel : INotifyPropertyChanged
     {
+
         private string _output = "Not clicked";
 
         public event PropertyChangedEventHandler PropertyChanged;
         public ICommand ExecuteCommand { get; }
+        public ICommand OpenAddTourView { get; }
 
         public MainViewModel()
         {
             Debug.Print("ctor MainViewModel");
             this.ExecuteCommand = new ExecuteCommand(this);
+            this.OpenAddTourView = new OpenAddTourView(this);
+
         }
 
         public string Output
@@ -44,6 +48,7 @@ namespace TourPlanner.ViewModels
             Debug.Print($"propertyChanged \"{propertyName}\"");
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
 
     }
 }

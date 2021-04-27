@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
-using System.Windows;
 using System.Windows.Input;
 
 namespace TourPlanner.ViewModels
 {
-    class ExecuteCommand : ICommand
+    internal class OpenAddTourView : ICommand
     {
         private readonly MainViewModel _mainViewModel;
 
-        public ExecuteCommand(MainViewModel mainViewModel)
+        public OpenAddTourView(MainViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
             _mainViewModel.PropertyChanged += (sender, args) =>
@@ -36,7 +33,8 @@ namespace TourPlanner.ViewModels
         public void Execute(object parameter)
         {
             Debug.Print("command: execute");
-            _mainViewModel.Output = "Command executed!!";
+            Views.AddTour subWindow = new Views.AddTour();
+            subWindow.Show();
             Debug.Print("command: execute done");
 
         }
